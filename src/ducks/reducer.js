@@ -20,6 +20,7 @@ const UPDATE_DESIREDRENT= 'UPDATE_DESIREDRENT'
 const CLEAR_INPUT= 'CLEAR_INPUT'
 
 export default function reducer(state=initalState, action){
+ // eslint-disable-next-line default-case
  switch(action.type){
 
     case UPDATE_NAME:
