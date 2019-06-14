@@ -23,6 +23,18 @@ class Wiz3 extends React.Component{
     }
 
     handleComplete(){
+        let {name, address, city, stateName, zip, imageUrl, mortgage, desiredRent} = this.props
+        let inputBody = {
+            propertyname: name,
+            address: address,
+            city: city,
+            state: stateName,
+            zip: zip,
+            image: imageUrl,
+            mortgageamt: mortgage,
+            desiredrent: desiredRent
+
+        }
 
     }
 
@@ -34,7 +46,7 @@ class Wiz3 extends React.Component{
         console.log(this.props)
         if (this.state.redirect) {
             return<Redirect to='/' />
-            
+
         }
     }
 }
